@@ -6,7 +6,8 @@
 # Sample Code!
 
 ## Curl
-```
+
+[code]
 curl -X POST \
   http://aa-hack-wars.splunk.link:8088/services/collector \
   -H 'Authorization: Splunk _token_value_' \
@@ -18,8 +19,8 @@ curl -X POST \
         "field2": "value2"
     }
 }'
-```
-## Python
+[/code]
+
 
 ## Java
 
@@ -49,7 +50,7 @@ HttpResponse<String> response = Unirest.post("http://aa-hack-wars.splunk.link:80
 
 ## Nodejs
 
-```
+[code]
 var request = require("request");
 
 var options = { method: 'POST',
@@ -68,7 +69,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 
-```
+[/code]
 
 ## Go
 
