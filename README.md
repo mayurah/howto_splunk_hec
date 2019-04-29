@@ -24,8 +24,7 @@
 
 ## Curl
 
-```bash
-
+```curl
 curl -X POST \
   http://aa-hack-wars.splunk.link:8088/services/collector \
   -H 'Authorization: Splunk _token_value_' \
