@@ -112,7 +112,7 @@ func main() {
 
 ### Python
 
-```
+```python
 import requests
 import json
 
@@ -134,7 +134,7 @@ print(response.text)
 
 ### Ruby
 
-```
+```ruby
 require 'uri'
 require 'net/http'
 
@@ -153,7 +153,7 @@ puts response.read_body
 
 ### Swift (NSURL)
 
-```
+```swift
 import Foundation
 
 let headers = [
@@ -205,9 +205,8 @@ dataTask.resume()
   - Preprocessor Script
 
 # Contributor
-  - Joe Welsh
-  - Karthika Krishnan
   - Mayur Pipaliya
+  - Steven Hanna
 
 
 ### DOT NET
