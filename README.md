@@ -7,7 +7,8 @@
 
 ## Curl
 
-[code]
+```bash
+
 curl -X POST \
   http://aa-hack-wars.splunk.link:8088/services/collector \
   -H 'Authorization: Splunk _token_value_' \
@@ -19,12 +20,13 @@ curl -X POST \
         "field2": "value2"
     }
 }'
-[/code]
+```
 
 
 ## Java
 
-```
+```java
+
 OkHttpClient client = new OkHttpClient();
 
 MediaType mediaType = MediaType.parse("application/json");
@@ -38,9 +40,10 @@ Request request = new Request.Builder()
 
 Response response = client.newCall(request).execute();
 ```
+
 or
 
-```
+```java
 HttpResponse<String> response = Unirest.post("http://aa-hack-wars.splunk.link:8088/services/collector")
   .header("Content-Type", "application/json")
   .header("Authorization", "Splunk _token_value_")
@@ -50,7 +53,7 @@ HttpResponse<String> response = Unirest.post("http://aa-hack-wars.splunk.link:80
 
 ## Nodejs
 
-[code]
+```javascript
 var request = require("request");
 
 var options = { method: 'POST',
@@ -69,11 +72,11 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 
-[/code]
+```
 
 ## Go
 
-```
+```go
 package main
 
 import (
